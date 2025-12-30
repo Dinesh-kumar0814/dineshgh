@@ -21,7 +21,7 @@ def open_links_in_browser(links):
         for link in links:
             print(f"Opening: {link}")
             page.goto(link)
-            page.wait_for_timeout(10000)  # wait 5 seconds for each link
+            page.wait_for_timeout(20000)  # wait 20 seconds for each link
 
         print("All links opened.")
         page.wait_for_timeout(10000)  # keep browser open 10 sec
